@@ -5,11 +5,15 @@ header {
   background-color: #dee0cc;
   height: 90px;
   width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
   }
   
 header ul {
   display: flex;
-  padding: 40px; 
+  padding: 60px; 
   align-items: center; 
   }
   
@@ -33,7 +37,7 @@ header ul {
 .heroImg {
   display: flex;
   justify-content: center;
-  margin: 60px;
+  margin-top: 150px;
   }
   
 .about {
@@ -44,7 +48,6 @@ header ul {
 img .photo {
   margin: 40px;
   }
-  
   
 body {
   background-color:#281522;
@@ -162,7 +165,13 @@ h2 {
   line-height: 19px;
 }
 
-
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
 
 footer {
   display: flex;
@@ -180,10 +189,9 @@ h3 {
   line-height: .5;
 }
 
-
 footer ul {
   display: flex;
-  padding: 40px; 
+  padding: 60px; 
   align-items: center;
   }
   
@@ -199,6 +207,7 @@ footer ul {
   cursor: pointer;
   color: #D7E788;
   }
+
 
   @media screen and (max-width: 600px) {
     .heroImg {
