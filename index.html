@@ -86,9 +86,35 @@
     </div>
   </div>
 </div>
+
 <div class="top">
   <img id="backToTopImg" src="images/top.png">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    var $img = $('#backToTopImg');
+  
+    $img.on('click', function() {
+      scrollToTop();
+    });
+  
+    function scrollToTop() {
+      $('html, body').animate({scrollTop: 0}, 'slow');
+    }
+  
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 20) {
+        $img.css('display', 'block');
+      } else {
+        $img.css('display', 'none');
+      }
+    });
+  });
+  </script>
+
 </div>
+
 </section>
   
   <footer>
